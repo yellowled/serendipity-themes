@@ -1,0 +1,4 @@
+Name: 102
+Author: Matthias 'YellowLed' Mees
+Date: 2009-01-05
+Require Serendipity: 1.1

@@ -1,0 +1,10 @@
+/**********************************************************************/
+/* Template '102' by Matthias 'YellowLed' Mees                        */
+/* (Fixes for IE 6)                                                   */
+/**********************************************************************/
+
+/* make sure the sidebar stays where it should be */
+#side { clear: right; }
+
+/* IE doesn't do min-width or max-width, so #page needs a fixed width */
+#page { width: 740px; }

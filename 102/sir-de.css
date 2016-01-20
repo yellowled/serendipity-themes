@@ -1,0 +1,66 @@
+/*** Simple image replacement for German visitors ***/
+#serendipity_plugin_randomquotes h2,
+#serendipity_plugin_multilingual h2,
+#serendipity_plugin_staticpage h2,
+.serendipity_plugin_history_1 h2,
+.serendipity_plugin_history_2 h2,
+#serendipity_plugin_comments h2,
+#serendipity_categories_plugin h2,
+#serendipity_plugin_recententries h2,
+#serendipity_archives_plugin h2,
+#serendipity_plugin_freetag h2,
+.serendipity_html_nugget_plugin_1 h2,
+#mailhead, #archhead,
+#sp_blogroll,
+#sp_impressum,
+#sp_datenschutz {
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 40px;
+    text-indent: -999em;
+}
+
+#serendipity_plugin_randomquotes h2,
+#serendipity_plugin_multilingual h2,
+#serendipity_plugin_staticpage h2,
+.serendipity_plugin_history_1 h2,
+.serendipity_plugin_history_2 h2,
+#serendipity_plugin_comments h2,
+.serendipity_html_nugget_plugin_1 h2 { width: 200px; }
+
+#serendipity_categories_plugin h2,
+#serendipity_plugin_recententries h2,
+#serendipity_archives_plugin h2,
+#serendipity_plugin_freetag h2 { width: 170px; }
+
+#mailhead, #archhead {
+    height: 50px;
+    width: 240px;
+}
+
+#sp_blogroll,
+#sp_impressum,
+#sp_datenschutz {
+    height: 50px;
+    width: 300px;
+}
+
+#serendipity_plugin_randomquotes h2 { background-image: url(sir/de/quotes.png); }
+#serendipity_plugin_multilingual h2 { background-image: url(sir/de/biling.png); }
+#serendipity_plugin_staticpage h2 { background-image: url(sir/de/static.png); }
+.serendipity_plugin_history_1 h2 { background-image: url(sir/de/oneyea.png); }
+.serendipity_plugin_history_2 h2 { background-image: url(sir/de/twoyea.png); }
+#serendipity_plugin_comments h2 { background: url(sir/de/commen.png); }
+.serendipity_html_nugget_plugin_1 h2 { background: url(sir/de/twittr.png); }
+
+#serendipity_categories_plugin h2 { background-image: url(sir/de/categs.png); }
+#serendipity_plugin_recententries h2 { background-image: url(sir/de/recent.png); }
+#serendipity_archives_plugin h2 { background-image: url(sir/de/archiv.png); }
+#serendipity_plugin_freetag h2 { background-image: url(sir/de/tagtop.png); }
+
+#mailhead { background-image: url(sir/de/confrm.png); }
+#archhead { background-image: url(sir/de/archhd.png); }
+
+#sp_blogroll { background-image: url(sir/de/blroll.png); }
+#sp_impressum { background-image: url(sir/de/imprnt.png); }
+#sp_datenschutz { background-image: url(sir/de/datsch.png); }

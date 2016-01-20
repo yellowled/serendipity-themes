@@ -1,0 +1,52 @@
+/*** Simple image replacement for Non-german visitors ***/
+#serendipity_plugin_randomquotes h2,
+#serendipity_plugin_multilingual h2,
+#serendipity_plugin_staticpage h2,
+.serendipity_plugin_history_1 h2,
+.serendipity_plugin_history_2 h2,
+#serendipity_plugin_comments h2,
+#serendipity_categories_plugin h2,
+#serendipity_plugin_recententries h2,
+#serendipity_archives_plugin h2,
+#serendipity_plugin_freetag h2,
+.serendipity_html_nugget_plugin_1 h2,
+#mailhead, #archhead {
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 40px;
+    text-indent: -999em;
+}
+
+#serendipity_plugin_randomquotes h2,
+#serendipity_plugin_multilingual h2,
+#serendipity_plugin_staticpage h2,
+.serendipity_plugin_history_1 h2,
+.serendipity_plugin_history_2 h2,
+#serendipity_plugin_comments h2,
+.serendipity_html_nugget_plugin_1 h2 { width: 200px; }
+
+#serendipity_categories_plugin h2,
+#serendipity_plugin_recententries h2,
+#serendipity_archives_plugin h2,
+#serendipity_plugin_freetag h2 { width: 170px; }
+
+#mailhead, #archhead {
+    height: 50px;
+    width: 120px;
+}
+
+#serendipity_plugin_randomquotes h2 { background-image: url(sir/en/quotes.png); }
+#serendipity_plugin_multilingual h2 { background-image: url(sir/de/biling.png); }
+#serendipity_plugin_staticpage h2 { background-image: url(sir/en/static.png); }
+.serendipity_plugin_history_1 h2 { background-image: url(sir/en/oneyea.png); }
+.serendipity_plugin_history_2 h2 { background-image: url(sir/en/twoyea.png); }
+#serendipity_plugin_comments h2 { background: url(sir/en/commen.png); }
+.serendipity_html_nugget_plugin_1 h2 { background: url(sir/de/twittr.png); }
+
+#serendipity_categories_plugin h2 { background-image: url(sir/en/categs.png); }
+#serendipity_plugin_recententries h2 { background-image: url(sir/en/recent.png); }
+#serendipity_archives_plugin h2 { background-image: url(sir/en/archiv.png); }
+#serendipity_plugin_freetag h2 { background-image: url(sir/de/tagtop.png); }
+
+#mailhead { background-image: url(sir/de/confrm.png); }
+#archhead { background-image: url(sir/de/archhd.png); }
