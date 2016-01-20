@@ -1,0 +1,54 @@
+legend, label,
+select, input,
+textarea { font-family: "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Lucida, Verdana, sans-serif; }
+
+label, input,
+select, textarea {
+    font-size: .75em;
+    padding: .2em;
+}
+
+dt label,
+dd input,
+li label,
+li input {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+label { font-weight: bold!important; }
+
+#captcha {
+    font-size: 1em;
+    padding: .2em;
+}
+
+fieldset { margin: 0 0 1.5em; }
+
+.flatform,
+#captcha { border: .1em solid #ccc; }
+
+.flatform:hover,
+#captcha:hover { border: .1em solid #aaa; }
+
+.flatform:focus,
+#captcha:focus { background: #eee; }
+
+.block-label { display: block; }
+
+#theform {
+    float: left;
+    width: 29.75em;
+}
+
+#directions {
+    float: right;
+    width: 18.375em;
+}
+
+#buttons { clear: both; }
+
+#contactform {
+    margin: 0 0 1.125em;
+    padding-left: 1.125em;
+}

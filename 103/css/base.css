@@ -1,0 +1,79 @@
+/* Basic styling against the reset stylesheet */
+
+body { line-height: 1.5; }
+
+h1, h2, h3,
+h4, h5, h6,
+strong, dt { font-weight: bold; }
+
+em, cite { font-style: italic; }
+
+code, kbd, var,
+tt, pre { font-family: Consolas, "Courier New", Courier, sans-serif; }
+
+acronym { text-transform: uppercase; }
+
+del { text-decoration: line-through; }
+
+ins { text-decoration: none; }
+
+blockquote p:before, q:before { content: open-quote; }
+blockquote p:after, q:after { content: close-quote; }
+
+/* Safari support for quotes */
+q:before { content: "\201E"; }
+q:after { content: "\201C"; }
+q q:before { content: "\201A"; }
+q q:after { content: "\2018"; }
+
+*[lang~='de'] q:before, q[lang~='de']:before { content: "\201E"; }
+*[lang~='de'] q:after, q[lang~='de']:after { content: "\201C"; }
+*[lang~='de'] q q:before, q[lang~='de'] q:before { content: "\201A"; }
+*[lang~='de'] q q:after, q[lang~='de'] q:after { content: "\2018"; }
+
+*[lang~='en'] q:before, q[lang~='en']:before { content: "\201C"; }
+*[lang~='en'] q:after, q[lang~='en']:after { content: "\201D"; }
+*[lang~='en'] q q:before, q[lang~='en'] q:before { content: "\2018"; }
+*[lang~='en'] q q:after, q[lang~='en'] q:after { content: "\2019"; }
+
+blockquote * { quotes: none; }
+blockquote > *:before { content: "\201E"; }
+blockquote > *:after  { content: "\201C"; }
+blockquote q:before   { content: "\201A"; }
+blockquote q:after    { content: "\2018"; }
+
+*[lang~='de'] blockquote > *:before,
+blockquote[lang~='de'] > *:before { content: "\201E"; }
+*[lang~='de'] blockquote > *:after,
+blockquote[lang~='de'] > *:after { content: "\201C"; }
+*[lang~='de'] blockquote q:before,
+blockquote[lang~='de'] q:before { content: "\201A"; }
+*[lang~='de'] blockquote q:after,
+blockquote[lang~='de'] q:after { content: "\2018"; }
+
+*[lang~='en'] blockquote > *:before,
+blockquote[lang~='en'] > *:before { content: "\201C"; }
+*[lang~='en'] blockquote > *:after,
+blockquote[lang~='en'] > *:after { content: "\201D"; }
+*[lang~='en'] blockquote q:before,
+blockquote[lang~='en'] q:before { content: "\2018"; }
+*[lang~='en'] blockquote q:after,
+blockquote[lang~='en'] q:after { content: "\2019"; }
+
+sub, sup {
+    font-size: 75%;
+    line-height: 1;
+}
+
+sub { vertical-align: text-bottom; }
+sup { vertical-align: text-top; }
+
+ol { list-style-type: decimal; }
+ul { list-style-type: disc; }
+
+ol, ul { padding-left: 2.5em; }
+
+#serendipity_preview_spacer {
+    float: none!important;
+    height: 0!important;
+}

@@ -1,0 +1,132 @@
+#header,
+#content,
+#footer {
+    margin: 0 auto;
+    width: 48.125em;
+}
+
+#header { margin-top: 1.125em; }
+
+#logo {
+    float: left;
+    margin-bottom: 1.125em;
+    width: auto;
+}
+
+#search,
+#social {
+    float: right;
+    width: 18.375em;
+}
+
+#archives {
+    clear: both;
+    padding: .4167em 0;
+    width: 48.125em;
+}
+
+#archives dt,
+#archives dd {
+    float: left;
+    padding: 0 0 0 1em;
+    width: auto;
+}
+
+#search fieldset { padding-left: 1.5em; }
+
+#social { margin-top: 0; }
+
+#social dt,
+#social dd { padding-left: 2em; }
+
+#social dd {
+    float: left;
+    width: auto;
+}
+
+.entry { margin: 0 0 1.125em; }
+
+.entry-info {
+    float: left;
+    width: 18.375em;
+}
+
+.entry-title { padding-right: 1.3333em; }
+
+.preface { padding-right: 2em; }
+
+.entry-meta { padding-right: 1.5em; }
+
+.entry-body {
+    float: right;
+    width: 29.75em;
+}
+
+.entry-footer { clear: both; }
+
+.amonth,
+#serendipity_categories_list li {
+    float: left;
+    width: 19.8333em;
+}
+
+#bycats,
+#bytags,
+#bydate { margin-bottom: 1.125em; }
+
+#summary dt,
+#summary dd {
+    float: left;
+    width: 32.0834em;
+}
+
+#summary dt { clear: left; }
+
+.trackback-info,
+.comment-info {
+    float: left;
+    margin: .4167em 0;
+    width: 24.5em;
+}
+
+.trackback-info cite,
+.comment-info cite { padding-right: .8334em; }
+
+.trackback-body,
+.comment-body {
+    float: right;
+    margin: .4167em 0;
+    width: 39.6667em;
+}
+
+.comment_avatar {
+    float: left;
+    padding: 0 .4167em;
+}
+
+.odd, .even {
+    margin: 0 0 1.125em;
+    padding: .25em 0;
+}
+
+#legal {
+    float: left;
+    list-style: none;
+    margin-top: 1.125em;
+    padding-left: .75em;
+    width: 5em;
+}
+
+#statistics {
+    float: right;
+    margin-top: 1.5em;
+    padding-right: 1em;
+    width: 6.6667em;
+}
+
+#credits {
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 29.75em;
+}

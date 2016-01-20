@@ -1,0 +1,58 @@
+body { font-family: "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Lucida, Verdana, sans-serif; }
+
+h1 {
+    font-size: 1.125em;
+    line-height: 1em;
+    margin: 0 0 1em;
+}
+
+h2 {
+    font-size: 1em;
+    line-height: 1.125em;
+    margin: 0 0 1.125em;
+}
+
+h3 {
+    font-size: .875em;
+    line-height: 1.2867em;
+    margin: 0 0 1.2857em;
+}
+
+h4, h5, h6 {
+    font-size: .75em;
+    line-height: 1.5em;
+    margin: 0 0 1.5em;
+}
+
+p, address,
+caption, thead,
+tfoot, tbody { font-size: .75em; }
+
+p, address { margin: 0 0 1.5em; }
+
+table { margin: 0 0 1.5em; }
+
+caption { margin: 0 0 .75em; }
+
+pre {
+    font-size: .75em;
+    margin: 0 0 1.8em;
+    white-space: pre-wrap;
+}
+
+p code, p kbd,
+p var, p tt { font-size: 1em; }
+
+hr { margin: 1.125em 0; }
+
+li, dt, dd { font-size: .75em; }
+
+li p { font-size: 1em; }
+
+li ul li,
+li ol li { font-size: 1em; }
+
+ol, ul, dl { margin: 0 0 1.125em; }
+
+li ul,
+li ol { margin: 0 0 .75em; }

@@ -1,0 +1,4 @@
+Name: YL 103
+Author: Matthias 'YellowLed' Mees
+Date: 2009-07-09
+Require Serendipity: 1.1

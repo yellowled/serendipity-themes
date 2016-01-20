@@ -1,0 +1,87 @@
+/* Code snippets */
+
+/*
+    <pre>
+        <code class="...">
+        ...
+        </code>
+    </pre>
+*/
+
+.code-html,
+.code-css,
+.code-php,
+.code-smarty {
+    background: #eee;
+    border: .1em solid #ccc;
+    display: block;
+    padding: .667em;
+    width: 36em;
+}
+
+.code-html:before,
+.code-css:before,
+.code-php:before,
+.code-smarty:before {
+    color: #aaa;
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 1.6em;
+    text-align: right;
+}
+
+.code-html:before { content: "HTML"; }
+.code-css:before { content: "CSS"; }
+.code-php:before { content: "PHP"; }
+.code-smarty:before { content: "Smarty"; }
+
+/* Bubble quotes */
+
+/*
+    <blockquote class="bubble-quote">
+        <p> ... </p>
+    <blockquote>
+    <cite class="bubble-cite">...</cite>
+*/
+
+.bubble-quote {
+    border: .083em solid #c9c2c1;
+    line-height: normal;
+    margin: 0;
+    margin-left: 2em;
+    padding: 0;
+    width: 25em;
+}
+
+.bubble-quote p {
+    line-height: normal;
+    margin: .834em;
+    padding: 0;
+}
+
+.bubble-cite {
+    background: transparent url(../img/tip.gif) 20px 0 no-repeat;
+    display: block;
+    font-size: .75em;
+    font-style: italic;
+    line-height: normal;
+    margin: 0 0 1em 2.6667em;
+    padding: .834em 0 0 1.25em;
+    position: relative;
+    top: -.083em;
+}
+
+/* Drop caps */
+
+/*
+    <p><span class="dropcap">...</span>...</p>
+*/
+
+p .dropcap {
+    float: left;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 4.667em;
+    line-height: .92;
+    margin-right: .089em;
+    padding-right: .089em;
+}

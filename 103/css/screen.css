@@ -1,0 +1,48 @@
+body {
+    background: #fff;
+    color: #444;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus { color: #1a3; }
+
+a:hover,
+a:focus { background: #cfc; }
+
+abbr[title],
+acronym[title] { border-bottom: 1px dotted #888 !important; }
+
+del { color: #888; }
+
+ins { border-bottom: 1px dashed #888; }
+
+blockquote {
+    border-left: .3125em solid #ccc;
+    margin: 0 0 1.125em 1.125em;
+    padding: 0 .625em;
+    width: 25em;
+}
+
+#archives {
+    background: #eee;
+    border-top: .0833em solid #1a3;
+}
+
+.entry { border-bottom: .0625em solid #ccc; }
+
+#bytags .entry-body { text-align: center; }
+
+.trackback-info cite,
+.comment-info cite { display: block; }
+
+.odd, .even { border-top: .0625em solid #ccc; }
+
+.odd { background: #eee; }
+
+#footer {
+    background: #eee;
+    border-top: .0834em solid #1a3;
+}
