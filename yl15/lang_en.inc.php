@@ -1,0 +1,36 @@
+<?php # $Id: lang_en.inc.php,v 1.3 2005/05/17 11:43:07 garvinhicking Exp $
+@define('THEME_COLORSET', 'Color Choice');
+@define('THEME_COLORSET_DESC', 'Choose the colorset you want your blog to use');
+@define('MY_COLORSET', 'My colorset');
+@define('FOOTER_POSITION', 'Position of Entry Footer');
+@define('FOOTER_POSITION_DESC', 'Put the complete entry footer below the entry or split it up in two parts above and below the entry');
+@define('SPLIT_ENTRY', 'Split');
+@define('BELOW_ENTRY', 'Below');
+@define('COCOMMENT_ACTIVE', 'Integrate coComment');
+@define('COCOMMENT_ACTIVE_DESC', 'Integrate coComment into comment form');
+@define('USE_COCOMMENT','Use coComment');
+@define('NO_COCOMMENT', 'Do not use coComment');
+@define('COUNTER_CODE', 'Counter code');
+@define('COUNTER_CODE_DESC', 'Insert code for counter(s) and/or web stat tool(s)');
+@define('USE_COUNTER', 'Integrate counter');
+@define('USE_COUNTER_DESC', 'Choose whether to use counter code inserted above');
+@define('CC_POS', 'Yes');
+@define('CC_NEG', 'No');
+@define('FOOTER_TEXT', 'Footer text');
+@define('FOOTER_TEXT_DESC', 'Use this to insert additional text into the page footer');
+@define('USE_FOOTER_TEXT', 'Integrate text');
+@define('USE_FOOTER_TEXT_DESC', 'Choose whether to integrate footer text inserted above');
+@define('FT_POS', 'Yes');
+@define('FT_NEG', 'No');
+@define('NAVLINK_AMOUNT', 'Number of navbar links');
+@define('NAVLINK_AMOUNT_DESC', 'Enter number of links in the navbar (needs reload of the Manage Styles page)');
+@define('NAV_LINK_TEXT', 'Navbar link');
+@define('NAV_LINK_DESC', 'Enter the navbar link text');
+@define('NAV_LINK_URL', 'URL for Navbar link');
+@define('NAV_LINK_URL_DESC', 'Enter the full URL of your link');
+@define('NAV_DEFAULT_0', 'About');
+@define('NAV_DEFAULT_1', 'Photos');
+@define('NAV_DEFAULT_2', 'Impressum');
+@define('NAV_DEFAULT_3', 'Music');
+@define('NAV_DEFAULT_4', 'Contact');
+?>

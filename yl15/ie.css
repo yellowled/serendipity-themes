@@ -1,0 +1,5 @@
+/* Additional stylesheet for s9y template 'YL2.1beta' */
+/* needed for IE <= 6                                 */
+
+.doublebar { width: 59%; }
+.singlebar { width: 69%; }

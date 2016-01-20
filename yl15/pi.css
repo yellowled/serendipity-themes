@@ -1,0 +1,83 @@
+/* Alternate stylesheet for s9y template 'YL2.1beta' */
+/* colorset: YellowLed                               */
+
+body {
+   background: #ebd9a9;
+   font: 100.01% Georgia, serif;
+}
+
+#mainpane {
+   width: 800px;
+}
+
+#rounded_TL { background: url(img/pi-rounded_TL.gif) top left no-repeat; }
+#rounded_TR { background: url(img/pi-rounded_TR.gif) top right no-repeat; }
+#rounded_BL { background: url(img/pi-rounded_BL.gif) bottom left no-repeat; }
+#rounded_BR { background: url(img/pi-rounded_BR.gif) bottom right no-repeat; }
+
+#serendipity_banner { background: url(img/pi-header.png) center center no-repeat; }
+
+#navbar,
+#footer {
+   background: #0f6679;
+   color: #fff;
+}
+
+#navbar a:link,
+#navbar a:active,
+#navbar a:visited,
+#footer a:link,
+#footer a:active,
+#footer a:visited {
+   color: #ebd9a9;
+   text-decoration: none;
+}
+
+#navbar a:hover,
+#footer a:hover {
+   color: #ebd9a9;
+   text-decoration: underline;
+}
+
+a:link,
+a:active,
+a:visited {
+   color: #0f6679;
+}
+
+.serendipity_title a:link,
+.serendipity_title a:active,
+.serendipity_title a:visited {
+   color: #0f6679;
+}
+
+.serendipity_title a:hover {
+   color: #000;
+}
+
+.small_box {
+   background: #fdf6e3;
+   border-top: 1px solid #0f6679;
+   border-bottom: 1px solid #0f6679;
+}
+
+table.serendipity_calendar {
+   border-bottom: 1px solid #ddd;
+   border-left: 1px solid #ddd;
+   border-right: 1px solid #ddd;
+}
+
+.serendipity_calendarHeader { background: #0f6679; }
+
+td.serendipity_weekDayName {
+   background: #ebd9a9;
+   color: #000;
+}
+
+.searchterm,
+.searchresults { color: #0f6679; }
+
+.plugin_comment_wrap {
+   border-top: 1px solid #ddd;
+   border-bottom: 1px solid #ddd;
+}

@@ -1,0 +1,82 @@
+/* Alternate stylesheet for s9y template 'YL2.1beta' */
+/* colorset: The Matrix                              */
+
+body {
+   background: #195a18;
+   color: #000;
+   font: 100.01% Arial, sans-serif;
+}
+
+#mainpane {
+   width: 760px;
+}
+
+#rounded_TL { background: url(img/tm-rounded_TL.gif) top left no-repeat; }
+#rounded_TR { background: url(img/tm-rounded_TR.gif) top right no-repeat; }
+#rounded_BL { background: url(img/tm-rounded_BL.gif) bottom left no-repeat; }
+#rounded_BR { background: url(img/tm-rounded_BR.gif) bottom right no-repeat; }
+
+#serendipity_banner { background: url(img/tm-header.jpg) center center no-repeat; }
+
+#navbar { background: #2fa62d; }
+
+#navbar a:link,
+#navbar a:active,
+#navbar a:visited {
+   color: #195a18;
+   text-decoration: none;
+}
+
+#navbar a:hover {
+   color: #195a18;
+   text-decoration: underline;
+}
+
+#footer {
+   background: #000;
+   color: #2fa62d;
+}
+
+a:link,
+a:active,
+a:visited {
+   color: #195a18;
+}
+
+.serendipity_title a:link,
+.serendipity_title a:active,
+.serendipity_title a:visited {
+   color: #195a18;
+}
+
+.serendipity_title a:hover {
+   color: #2fa62d;
+}
+
+.small_box {
+   border-top: 1px solid #195a18;
+   border-bottom: 1px solid #195a18;
+}
+
+table.serendipity_calendar {
+   border-bottom: 1px solid #ddd;
+   border-left: 1px solid #ddd;
+   border-right: 1px solid #ddd;
+}
+
+.serendipity_calendarHeader { background: #195a18; }
+
+td.serendipity_weekDayName {
+   background: #2fa62d;
+   color: #000;
+}
+
+.searchterm,
+.searchresults { color: #195a18; }
+
+.plugin_comment_wrap {
+   border-top: 1px solid #ddd;
+   border-bottom: 1px solid #ddd;
+}
+
+.container_serendipity_syndication_plugin a { font-size: 0.9em; }

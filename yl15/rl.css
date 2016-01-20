@@ -1,0 +1,133 @@
+/* Alternate stylesheet for s9y template 'YL2.1beta' */
+/* colorset: Robert Lender                           */
+
+
+/* This changes the width for the columns. Make sure to */
+/* stay under 100% in total, otherwise the layout might */
+/* break! I suggest a 99.9% total.                      */
+
+/* 3-column layout */
+.threecolsleft { width: 20%; }  /* left sidebar width   */
+.doublebar { width: 59.9%; }    /* entries column width */
+.threecolsright { width: 20%; } /* right sidebar width  */
+
+/* 2-column layout */
+.singlebar { width: 69.9%; }    /* entries column width */
+.twocols { width: 30%; }        /* sidebar width        */
+/* (doesn't matter *which* sidebar is used)             */
+
+
+body {
+   background: #c7ecfd;
+   color: #000;
+   font: 100.01% "Trebuchet MS", Arial, sans-serif;
+}
+
+.serendipity_entry_body { font-size: 0.85em; }
+.serendipity_entry_extended { font-size: 0.85em; }
+.serendipitySideBarItem { font-size: 0.85em; }
+.serendipity_commentBody { font-size: 0.85em; }
+
+.serendipity_search_results,
+.serendipity_search_noentries,
+.serendipity_overview_noentries,
+.serendipity_freetag_taglist_related,
+.staticpage_navigation,
+.staticpage_author,
+.staticpage_metainfo,
+.serendipity_comments .serendipity_center { font-size: 0.85em; }
+
+#serendipity_commentform_comment { font-size: 1.3em; }
+
+#mainpane {
+   width: 760px;
+}
+
+#rounded_TL { background: url(img/rl-rounded_TL.gif) top left no-repeat; }
+#rounded_TR { background: url(img/rl-rounded_TR.gif) top right no-repeat; }
+#rounded_BL { background: url(img/rl-rounded_BL.gif) bottom left no-repeat; }
+#rounded_BR { background: url(img/rl-rounded_BR.gif) bottom right no-repeat; }
+
+#serendipity_banner { background: url(img/rl-header.jpg) center center no-repeat; }
+
+#navbar { background: #ccc; }
+
+#navbar a:link,
+#navbar a:active,
+#navbar a:visited {
+   color: #000;
+   text-decoration: none;
+}
+
+#navbar a:hover {
+   color: #000;
+   text-decoration: underline;
+}
+
+#footer { background: #c30; }
+
+a:link,
+a:active,
+a:visited {
+   color: #c30;
+}
+
+.serendipity_title a:link,
+.serendipity_title a:active,
+.serendipity_title a:visited {
+   font: 1.4em Georgia, "Trebuchet MS", Arial, sans-serif;
+   color: #c30;
+}
+
+.serendipity_title a:hover {
+   color: #666;
+}
+
+.small_box {
+   background: #fff;
+   border-top: 1px solid #c30;
+   border-bottom: 1px solid #c30;
+}
+
+table.serendipity_calendar {
+   border-bottom: 1px solid #ddd;
+   border-left: 1px solid #ddd;
+   border-right: 1px solid #ddd;
+}
+
+.serendipity_calendarHeader { background: #c30; }
+
+td.serendipity_weekDayName {
+   background: #ccc;
+   color: #000;
+}
+
+.searchterm,
+.searchresults { color: #c30; }
+
+.plugin_comment_wrap {
+   border-top: 1px solid #ddd;
+   border-bottom: 1px solid #ddd;
+}
+
+.serendipity_comment_author_selfcomment_oddbox,
+.serendipity_comment_author_selfcomment_evenbox {
+   background-color: #fff;
+}
+
+/* FAQ plugin   */
+#serendipityFAQnav,
+.serendipityFAQcats,
+.serendipityFAQlist,
+.cats, .faq_qa, .faq_qanav { font-size: 0.85em; }
+
+.serendipityFAQcats h4 { font-size: 1.2em; }
+
+/* Bookmarks plugin */
+#serendipityBookmarktitle { font-size: 1em; }
+
+#serendipityBookmarknav,
+#serendipityBookmarkintro,
+.serendipityBookmarklist,
+.bmsubcats,
+#serendipityBookmarkcontent { font-size: 0.85em; }

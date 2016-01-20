@@ -1,0 +1,78 @@
+/* Alternate stylesheet for s9y template 'YL2.1beta' */
+/* colorset: YellowLed                               */
+
+
+/* start external links */
+/* add arrow image to all external links */
+a[href^="http"] {
+   background: url(img/elink.gif) right center no-repeat;
+   padding-right: 10px;
+}
+
+/* remove it for links in banner, navbar, footer, */
+/* and those manually marked by class="noextarrow"*/
+#serendipity_banner a[href^="http"],
+#skiplinks a[href^="http"],
+#navbar a[href^="http"],
+#footer a[href^="http"],
+.container_serendipity_syndication_plugin a[href^="http"],
+a.noextarrow {
+   background: none;
+   padding-right: 0;
+}
+
+/* and those to my own blog; if you use this colorset, */
+/* replace http://matthias.yellowled.de with the URL   */
+/* of your blog                                        */
+a[href^="http://matthias.yellowled.de"] {
+   background: none;
+   padding-right: 0;
+}
+/* end external links   */
+
+body { font: 100.01% "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif; }
+
+#mainpane { width: 85%; }
+
+#serendipity_banner { background: url(img/yl-header.jpg) center center no-repeat; }
+
+#navbar, #footer { background: #b82a1b; }
+
+a:link,
+a:active,
+a:visited { color: #b82a1b; }
+
+.serendipity_title a:link,
+.serendipity_title a:active,
+.serendipity_title a:visited { color: #b82a1b; }
+
+.serendipity_title a:hover { color: #000; }
+
+.small_box {
+   background: #fafbfc;
+   border-top: 1px solid #4e657a;
+   border-bottom: 1px solid #4e657a;
+}
+
+.searchterm,
+.searchresults { color: #4e657a; }
+
+.plugin_comment_wrap {
+   border-top: 1px solid #4e657a;
+   border-bottom: 1px solid #4e657a;
+}
+
+.serendipity_comment_author_selfcomment_oddbox,
+.serendipity_comment_author_selfcomment_evenbox {
+   background-color: #fff;
+}
+
+.container_serendipity_html_nugget_plugin ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.container_serendipity_html_nugget_plugin li {
+   margin: 0 0 5px 0;
+}
