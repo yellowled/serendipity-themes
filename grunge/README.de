@@ -1,0 +1,31 @@
+Ein paar Anmerkungen zum "Grunge"-Template, weil es in gewisser Weise
+anders ist als andere Templates:
+
+1. Dieses Template hat nur eine Seitenleiste, zumindest erscheint es
+   so. Eigentlich hat es zwei Seitenleisten, welche jedoch auf der
+   selben Seite dargestellt werden. Man kann also durchaus
+   Seitenleistenplugins beiden Seitenleisten zuweisen, das beeinflußt
+   jedoch lediglich die Reihenfolge, in der diese ausgegeben werden -
+   die linke Seitenleiste wird zuerst ausgegeben.
+
+   Dieses dient der Kompatibilität. Somit kann man eine existierende
+   Anordnung der Seitenleistenplugins beibehalten, wenn man zuvor ein
+   3-spaltiges Template benutzt hat.
+
+2. Dieses Template hat keine Konfigurationsoptionen für den neuen
+   "theme configurator", welcher in Version 1.1 von s9y eingeführt
+   wird. Ich habe auch nicht vor, solche Optionen einzubauen, da ich
+   dieses Template möglichst einfach halten möchte.
+
+   Im Grunde das einzige Feature dieses Templates, welches davon
+   betroffen ist, ist die Navigationsleiste oben auf der Seite. Die
+   Links "Index", "RSS" und "Login" sollten in jedem Blog ohne
+   Anpassungen funktionieren. Der "Email"-Link sollte funktionieren,
+   wenn man das Kontaktformular-Plugin verwendet und für dieses
+   Kontaktformular den vorgegebenen Permalink verwendet hat.
+
+   Hat man diesen Permalink geändert oder möchte ein anderes
+   Kontaktformular verwendet (oder einen "mailto:"-Link), so muss die
+   Datei index.tpl an die eigenen Bedürfnisse angepasst werden.
+
+Matthias <matthiasmees@gmail.com>

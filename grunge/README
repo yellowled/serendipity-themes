@@ -1,0 +1,29 @@
+Just some notes on the 'Grunge' template, which is sort of special in
+some ways:
+
+1. This template has only one sidebar - at least it appears that
+   way. Actually, it has two sidebars, but they are put into one. That
+   means you can actually assign sidebar plugins to both sidebars, but
+   this will only affect the order in which they are displayed. The
+   left sidebar will be displayed first.
+
+   This is a means of compatibility. This way, you can keep your
+   existing 'arrangement' of sidebar plugins if you were using a
+   3-column template before.
+
+2. This template has no configuration options for the new s9y theme
+   configurator, which will be introduced in v1.1 of s9y. I'm not
+   planning on implementing any, since I want to keep this template
+   very simple.
+
+   The one feature of the template which is really affected by this is
+   the little navbar at the top. The links 'Index', 'RSS', and 'Login'
+   should work right out of the box in any blog. The links 'Email'
+   should work if you're using the s9y contactform plugin and used the
+   default permalink for your contact form.
+
+   If you chose to change the contact form permalink or want to use a
+   different contact form (or a 'mailto:' link), you'll have to edit
+   the index.tpl of this template to suit your needs.
+
+Matthias <matthiasmees@gmail.com>
