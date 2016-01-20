@@ -1,0 +1,6 @@
+body { text-align: center; }
+
+#bloginfo, #content,
+#plugins, #footer { text-align: left; }
+
+#content { width: 960px; }

@@ -1,0 +1,4 @@
+Name: Mr. Writer
+Author: Matthias 'YellowLed' Mees
+Date: 2008-03-26
+Require Serendipity: 1.1
