@@ -1,0 +1,25 @@
+/**********************************************************************/
+/* Template '102' by Matthias 'YellowLed' Mees                        */
+/* (Fixes for IE 5 + 6)                                               */
+/**********************************************************************/
+
+/* Emulate centering the wrapper */
+body { text-align: center; }
+#wrapper { text-align: left; }
+
+/* IE doesn't do min-width or max-width, so #wrapper needs a fixed width */
+#wrapper { width: 960px; }
+
+/* make sure the sidebar stays where it should be */
+#serendipityLeftSideBar { clear: right; }
+
+/* make them expand to their intended width */
+#footercredits { width: auto; }
+
+#footerlinks {
+    height: 100%;
+    width: 100%;
+}
+
+/* try solving the avatar problem */
+.commentbox { width: 100%; }

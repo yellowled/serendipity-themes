@@ -1,0 +1,1081 @@
+/**********************************************************************/
+/* s9y Template '102' by Matthias 'YellowLed' Mees                    */
+/* (General stylesheet)                                               */
+/**********************************************************************/
+
+/*** Global reset *****************************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* reset causes too small select boxes. */
+select { padding-left: 0.2em; }
+option { padding-left: 0.4em; }
+
+/* IE correction */
+html { font-size: 100%; }
+
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+}
+/*** End global reset *************************************************/
+
+
+/*** Skiplinks ********************************************************/
+#skip a {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    top: -1000em;
+    left: -1000em;
+}
+
+/* make skip links visible again when using tab navigation */
+#skip a:focus,
+#skip a:active {
+    position: static;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: auto;
+}
+/*** End skiplinks ****************************************************/
+
+
+/*** General styles ***************************************************/
+body {
+    background: #eee url({TEMPLATE_PATH}img/stripes.png);
+    color: #000;
+}
+/*** End general styles ***********************************************/
+
+
+/*** s9y-related styles ***********************************************/
+.msg {
+    font-size: 0.625em; /* 10px */
+    margin-bottom: 1.2em;
+}
+
+.important {
+    background: #fee8e8 url({TEMPLATE_PATH}img/info.png) 99% 50% no-repeat;
+    border: 1px solid #f00;
+    padding: 0.756em;
+}
+
+.notice {
+    background: #e8ffe8 url({TEMPLATE_PATH}img/info.png) 99% 50% no-repeat;
+    border: 1px solid #0f0;
+    padding: 0.756em;
+}
+/*** End s9y-related styles *******************************************/
+
+
+/*** Layout ***********************************************************/
+#wrapper {
+    background: #fff;
+    color: #444;
+    margin: 0 auto;
+    max-width: 52.5em;
+    min-width: 760px;
+    position: relative;
+    overflow: hidden;
+}
+
+#content {
+    float: left;
+    width: 70%;
+}
+
+#serendipityLeftSideBar {
+    float: right;
+    width: 30%;
+}
+
+#footer { clear: both; }
+/*** End layout *******************************************************/
+
+
+/*** RSS feed box *****************************************************/
+#rssfeeds {
+    background: #595959 url({TEMPLATE_PATH}img/feedsbl.png) left bottom no-repeat;
+    color: #fff;
+    font-size: 0.750em; /* 12px */
+    position: absolute;
+    top: 0;
+    right: 1.667em;
+}
+
+#rssfeeds dl { background: transparent url({TEMPLATE_PATH}img/feedsbr.png) right bottom no-repeat; }
+
+#rssfeeds dt { padding: 1em 1em 0.5em 1.5em; }
+
+#rssfeeds dd { padding: 1em 0 0.5em; }
+
+#rssfeeds dd#right { padding-right: 1em; }
+
+#rssfeeds * { float: left; }
+
+#rssfeeds a {
+    background: transparent url({TEMPLATE_PATH}img/rss16.png) 0 50% no-repeat;
+    color: #fff;
+    margin-right: 0.833em;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+#rssfeeds a:hover { text-decoration: underline; }
+/*** End RSS feed box *************************************************/
+
+/*** Search box *******************************************************/
+#search {
+    font-size: 0.750em; /* 12px */
+    position: absolute;
+    top: 4.167em;
+    right: 1.667em;
+}
+
+#search input {
+    border: 1px solid #ccc;
+    background: #f6f6f6;
+    padding: 0.333em;
+}
+
+input#searchbox { background: #fff url({TEMPLATE_PATH}img/search.png) 99% 50% no-repeat; }
+
+#searchbox #searchbutton { display: inline; }
+
+input#searchbutton:hover { border: 1px solid #595959; }
+
+#searchbox:focus { background-color: #efefef; }
+
+#searchbox:hover { border: 1px solid #595959; }
+/*** End search box ***************************************************/
+
+
+/*** Blog info ********************************************************/
+#bloginfo {
+    background: #317ccc url({TEMPLATE_PATH}img/header.png) left top repeat-x;
+    color: #fff;
+}
+
+#bloginfo dl { padding: 3em 0 1.5em 0.625em; }
+
+#bloginfo dt {
+    font-size: 2.5em; /* 40px */
+    font-weight: bold;
+}
+
+#bloginfo dd {
+    font-size: 1.25em; /* 20px */
+    font-weight: normal;
+}
+/*** End blog info ****************************************************/
+
+
+/*** Navigation *******************************************************/
+#navigation {
+    background: #595959;
+    float: left;
+    padding-bottom: 0.252em;
+    width: 100%;
+}
+
+#navigation ul {
+    list-style: none;
+    margin-left: 0.625em;
+}
+
+#navigation li {
+    float: left;
+    width: auto;
+}
+
+#navigation a {
+    border-bottom: 3px solid #595959;
+    color: #fff;
+    display: block;
+    font-size: 0.750em; /* 12px */
+    font-weight: bold;
+    margin-right: 1.5em;
+    padding: 0.667em 0 0.333em;
+    text-decoration: none;
+}
+
+#navigation a:hover { text-decoration: underline; }
+
+#navigation a.currentpage { border-bottom: 3px solid #cc9b31!important; }
+
+#mainpane {
+    clear: left;
+    padding: 0.750em 0;
+}
+/*** End navigation ***************************************************/
+
+
+/*** Footer 'sidebar' *************************************************/
+#serendipityRightSideBar {
+    background: #595959;
+    color: #fff;
+    float: left;
+    padding-top: 0.756em;
+    width: 100%;
+}
+
+#serendipityRightSideBar a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+#serendipityRightSideBar a:visited {
+    color: #cc9b31;
+    text-decoration: none;
+}
+
+#serendipityRightSideBar a:hover { text-decoration: underline; }
+
+#serendipityRightSideBar .serendipitySideBarItem {
+    float: left;
+    padding: 0 1.512em 0.756em 0.625em;
+    width: 20%;
+}
+/*** End footer 'sidebar' *********************************************/
+
+
+/*** Footer content ***************************************************/
+#footercredits {
+    background: #595959;
+    clear: left;
+    color: #fff;
+    font-size: 0.625em; /* 10px */
+    padding: 0 2.4em 0 1em;
+}
+
+#footercredits a {
+    color: #cc9b31;
+    text-decoration: none;
+}
+
+#footercredits a:hover {
+    color: #cc9b31;
+    text-decoration: underline;
+}
+
+#backtotop img {
+    border: none;
+    vertical-align: bottom;
+}
+
+#footerlinks {
+    background: #595959;
+    clear: left;
+    color: #fff;
+    float: left;
+    padding: 0.375em 0;
+    width: 100%;
+}
+
+#footerlinks ul { list-style: none; }
+
+#footerlinks li {
+    float: left;
+    width: auto;
+}
+
+#footerlinks a {
+    display: block;
+    color: #fff;
+    padding: 0.375em 0.375em 0.375em 0.625em;
+    text-decoration: underline;
+}
+
+#footerlinks a img { border: none; }
+/*** End footer content ***********************************************/
+
+
+/*** Pagination *******************************************************/
+#pagination {
+    font-size: 0.625em; /* 10px */
+    float: left;
+    margin-bottom: 1.8em;
+    padding-left: 1em;
+    width: 100%;
+}
+
+#pagination ul { list-style: none; }
+
+#pagination li {
+    float: left;
+    margin-right: 1.2em;
+    width: auto;
+}
+
+#pagination a { display: block; }
+
+.pagprev {
+    background: url({TEMPLATE_PATH}img/prev.png) no-repeat left center;
+    padding-left: 18px;
+}
+
+.pagnext {
+    background: url({TEMPLATE_PATH}img/next.png) no-repeat right center;
+    padding-right: 18px;
+}
+
+.serendipity_entrypaging {
+    float: left;
+    font-size: 0.625em; /* 10px */
+    padding: 0 3.6em 1.2em 1em;
+    text-align: center;
+}
+
+.epicon { display: none; }
+
+.serendipity_entrypaging_left {
+    background: url({TEMPLATE_PATH}img/prev.png) no-repeat left center;
+    float: left;
+    padding-left: 18px;
+}
+
+.serendipity_entrypaging_right {
+    background: url({TEMPLATE_PATH}img/next.png) no-repeat right center;
+    float: right;
+    padding-right: 18px;
+}
+
+/*** End pagination ***************************************************/
+
+
+/*** Entries **********************************************************/
+.serendipity_entry { padding: 0 2.250em 1.125em 0.625em; }
+
+.serendipity_title {
+    clear: both;
+    font-size: 1.125em; /* 22px */
+    margin-bottom: 0.136em;
+}
+
+.entrybyline {
+    border-bottom: 1px solid #ccc;
+    font-size: 0.625em; /* 10px */
+    margin-bottom: 1em;
+    padding-bottom: 0.3em;
+}
+
+.serendipity_entry_body { margin-bottom: 0.750em; }
+
+.serendipity_entry_body p {
+    font-size: 0.750em; /* 12px */
+    margin-bottom: 0.833em;
+}
+
+.serendipity_entry_body blockquote {
+    border-left: 5px solid #2763a5;
+    margin: 1em 3em 1em 1.5em;
+    padding: 0.250em 1em;
+}
+
+.serendipity_entry_body blockquote cite {
+    display: block;
+    font-size: 1em; /* 12px */
+    font-style: italic;
+}
+
+.serendipity_entry_body pre {
+    font-family: Courier, monospace;
+    font-size: 0.750em; /* 12px */
+    line-height: 1.2;
+    padding: 0.833em 0.417em 0.833em 0;
+    white-space: pre;
+}
+
+.serendipity_entry_body tt { font-family: Courier, monospace; }
+
+.serendipity_entry_body code {
+    background: #efefef;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #444;
+    display: block;
+    font-size: 1.375em;
+    padding: 0.750em;
+}
+
+.serendipity_entry_body dl {
+    font-size: 0.750em; /* 12px */
+    padding: 0.5em 0;
+}
+
+.serendipity_entry_body dl dt {
+    font-weight: bold;
+    margin-bottom: 0.833em;
+}
+
+.serendipity_entry_body dl dd {
+    margin-bottom: 0.833em;
+    padding-left: 1.5em;
+}
+
+.serendipity_entry_body ol,
+.serendipity_entry_body ul {
+    font-size: 0.750em; /* 12px */
+    margin-left: 3em;
+    padding: 0.5em 0;
+}
+
+.serendipity_entry_body li ol,
+.serendipity_entry_body li ul { font-size: 1em; }
+
+.serendipity_entry_body ol { list-style-type: decimal; }
+.serendipity_entry_body ul { list-style-type: disc; }
+
+.serendipity_entry_body li { padding-bottom: 0.5em; }
+
+.serendipity_entry_body abbr,
+.serendipity_entry_body acronym { cursor: help; }
+/*** End entries ******************************************************/
+
+
+/*** Entry footer *****************************************************/
+.serendipity_entryFooter {
+    border-top: 1px solid #ccc;
+    font-size: 0.625em; /* 10px */
+    float: left;
+    padding-top: 0.3em;
+    width: 100%;
+}
+
+.serendipity_entryFooter ul { list-style: none; }
+
+.serendipity_entryFooter li {
+    float: left;
+    margin-right: 1.6em;
+    width: auto;
+}
+
+.serendipity_entryFooter a { display: block; }
+
+.readmore {
+    background: url({TEMPLATE_PATH}img/next.png) no-repeat right center;
+    font-size: 0.833em; /* 10px */
+    padding-right: 18px;
+}
+
+.editlink {
+    display: block;
+    margin-bottom: 0.3em;
+}
+
+.addfooter {
+    clear: left;
+    font-size: 0.625em; /* 10px */
+    margin-bottom: 1.2em;
+}
+/*** End entry footer *************************************************/
+
+
+/*** Content links ****************************************************/
+/* Content */
+#mainpane a:link {
+    color: #2763a5;
+    text-decoration: none;
+}
+
+#mainpane a:visited {
+    color: #cc9b31;
+    text-decoration: none;
+}
+
+#mainpane a:hover { text-decoration: underline; }
+
+#mainpane a:active,
+#mainpane a:focus { color: #63a527; }
+
+/* add arrow image to all external links in the content */
+#content a[href^="http"] {
+    background: transparent url({TEMPLATE_PATH}img/elink.png) right center no-repeat;
+    padding-right: 10px;
+}
+
+#content a[href^="http"]:visited {
+    background: transparent url({TEMPLATE_PATH}img/vlink.png) right center no-repeat;
+    padding-right: 10px;
+}
+
+/* remove it for links manually marked by class="noextarrow"*/
+#content a.noextarrow {
+    background: none;
+    padding-right: 0;
+}
+
+#content .addthiswidget a {
+    background: none;
+    padding-right: 0;
+}
+
+/* and those to my own blog; if you use this template, */
+/* replace http://matthias.yellowled.de with the URL   */
+/* of your blog                                        */
+#content a[href^="http://localhost/serendipity"],
+#content a[href^="http://matthias.yellowled.de"],
+#content a[href^="http://localhost/serendipity"]:visited,
+#content a[href^="http://matthias.yellowled.de"]:visited {
+    background: none;
+    padding-right: 0;
+}
+/*** End content links ************************************************/
+
+
+/*** Sidebar **********************************************************/
+#serendipityLeftSideBar .serendipitySideBarItem {
+    margin-right: 1.512em;
+    margin-bottom: 1.512em;
+}
+
+.serendipitySideBarTitle {
+    font-size: 0.875em;
+    font-weight: bold;
+}
+
+#serendipityLeftSideBar .serendipitySideBarTitle {
+    background: #efefef url({TEMPLATE_PATH}img/sidebtl.png) left top no-repeat;
+    color: #444;
+    text-align: center;
+}
+
+#serendipityRightSideBar .serendipitySideBarTitle { margin-bottom: 0.333em; }
+
+#serendipityLeftSideBar .sidebartitlecontent {
+    background: transparent url({TEMPLATE_PATH}img/sidebtr.png) right top no-repeat;
+    padding: 0.189em 0;
+}
+
+.sidebarbodycontent { font-size: 0.750em; /* 12px */ }
+
+.sidebarbodycontent p { margin-bottom: 0.5em; }
+
+#serendipityLeftSideBar .serendipitySideBarContent {
+    background: #efefef url({TEMPLATE_PATH}img/sidebbl.png) left bottom no-repeat;
+    color: #444;
+}
+
+#serendipityLeftSideBar .sidebarbodycontent {
+    background: transparent url({TEMPLATE_PATH}img/sidebbr.png) right bottom no-repeat;
+    padding: 0.378em 0.756em 0.756em;
+}
+/*** End sidebar ******************************************************/
+
+
+/*** Trackbacks and comments ******************************************/
+#trackbacksection,
+#commentsection,
+#contactsection { padding: 0 1.512em 0.756em 0.63em; }
+
+#trackbacksection h2,
+#commentsection h2,
+h2.serendipity_date {
+    font-size: 0.875em; /* 14px */
+    margin-bottom: 0.167em;
+}
+
+#commentsection {
+    clear: both;
+    float: left;
+    padding-top: 0.756em;
+}
+
+#trackbacksection .trackbackuri {
+    display: block;
+    font-size: 0.625em; /* 10px */
+    margin-bottom: 0.6em;
+}
+
+#trackbacksection dl { font-size: 0.750em; /* 12px */ }
+
+#trackbacksection dl,
+#trackbacksection dt { padding-bottom: 0.5em; }
+
+#trackbacksection dd { padding-bottom: 0.250em; }
+
+.trackbackblog,
+.trackbacktime { font-size: 0.833em; }
+
+.trackbackblog {
+    float: left;
+    width: 65%;
+}
+
+.trackbacktime {
+    float: right;
+    width: 35%;
+}
+
+.trackbackdelete {
+    clear: both;
+    font-size: 0.625em; /* 10px */
+    margin-bottom: 1em;
+}
+
+#commentview {
+    font-size: 0.625em; /* 10px */
+    margin-bottom: 1em;
+}
+
+#commentview dt {
+    float: left;
+    padding-right: 1em;
+}
+
+.nocomments {
+    clear: left;
+    font-size: 0.625em; /* 10px */
+    margin-bottom: 0.5em;
+}
+
+.commentbox {
+    clear: both;
+    float: left;
+    margin-bottom: 1.125em;
+}
+
+.commentbody {
+    font-size: 0.750em; /* 12px */
+    padding: 0 2em 0.5em 0;
+}
+
+.commentpreview {
+    background: #efefef!important;
+    border: 1px solid #ccc!important;
+    padding: 0.378em 1.512em 0.378em 0.378em!important;
+}
+
+.commentsource {
+    border-top: 1px solid #ccc;
+    float: left;
+    font-size: 0.625em; /* 10px */
+    padding: 0.6em 2em 0.6em 0;
+    width: 100%;
+}
+
+.commentsource ul { list-style: none; }
+
+.commentsource li {
+    float: left;
+    margin-right: 1.6em;
+    width: auto;
+}
+
+.commentsource a { display: block; }
+
+.commentsourcetrace,
+.commentreply,
+.commentsourceownerlink,
+.replyformlink { display: inline!important; }
+
+.commentsource a[href^="http"],
+.commentsource a[href^="http"]:visited { padding-right: 1em!important; }
+
+.commentsource a[href^="http://localhost/serendipity"],
+.commentsource a[href^="http://matthias.yellowled.de"],
+.commentsource a[href^="http://localhost/serendipity"]:visited,
+.commentsource a[href^="http://matthias.yellowled.de"]:visited { padding-right: 0!important; }
+
+.cauthorwithemail,
+.cauthorwoutemail,
+.commentsourceurl { padding-left: 1.8em; }
+
+.cauthorwithemail { background: url({TEMPLATE_PATH}img/mail.png) 0% 50% no-repeat; }
+.cauthorwoutemail { background: url({TEMPLATE_PATH}img/user.png) 0% 50% no-repeat; }
+.commentsourceurl { background: url({TEMPLATE_PATH}img/home.png) 0% 50% no-repeat; }
+/*** End Trackbacks and comments **************************************/
+
+
+/*** Avatar support in comments ***************************************/
+.comment_avatar {
+    background: #efefef;
+    border: 1px solid #ccc;
+    float: left;
+    margin: 0 0.667em 0.250em 0;
+    padding: 0.250em;
+}
+
+/* .commentbody { float: left; } */
+.commentsource { clear: left; }
+/*** End avatar support in comments ***********************************/
+
+
+/*** Comment form *****************************************************/
+#cform fieldset {
+    border: 1px solid #ccc;
+    clear: both;
+    padding: 0.756em;
+    width: 95%;
+}
+
+#cform legend {
+    background: #efefef;
+    border: 1px solid #ccc;
+    font-size: 0.750em; /* 12px */
+    font-weight: bolder;
+    padding: 0.250em 1em;
+    text-align: center;
+}
+
+#cformpreface {
+    font-size: 0.750em; /* 12px */
+    padding: 0 3em 1.5em 0;
+}
+
+#cform dl { font-size: 0.750em; /* 12px */ }
+
+#cform dt {
+    float: left;
+    margin: 0 1em 0.5em 0;
+}
+
+#cform dd {
+    padding-left: 0;
+    margin-left: 20%;
+    margin-bottom: 0.5em;
+}
+
+#cform input,
+#cform select,
+#cform textarea { border: 1px solid #ccc; }
+
+#cform input,
+#cform textarea { padding: 0.250em; }
+
+#cform select,
+#cform textarea { width: 85%; }
+
+#cform textarea { margin-bottom: 1em; }
+
+#cfname,
+#cfemail,
+#cfurl,
+#serendipity_replyTo,
+#cfcomment { color: #444; }
+
+#cfname { background: #fff url({TEMPLATE_PATH}img/user.png) 99% 50% no-repeat; }
+#cfname:focus { background-color: #efefef; }
+
+#cfemail { background: #fff url({TEMPLATE_PATH}img/mail.png) 99% 50% no-repeat; }
+#cfemail:focus { background-color: #efefef; }
+
+#cfurl { background: #fff url({TEMPLATE_PATH}img/home.png) 99% 50% no-repeat; }
+
+#cfurl:focus { background-color: #efefef; }
+
+#cfcomment { background: #fff url({TEMPLATE_PATH}img/text.png) 99% 99% no-repeat; }
+#cfcomment:focus { background-color: #efefef; }
+
+#cfname:hover,
+#cfemail:hover,
+#cfurl:hover,
+#serendipity_replyTo:hover,
+#cfcomment:hover,
+#submitcomment:hover,
+#serendipity_preview:hover { border: 1px solid #2763a5; }
+
+.cflabel { font-weight: bold; }
+
+.serendipity_commentDirection {
+    background: #efefef url({TEMPLATE_PATH}img/info.png) 99% 50% no-repeat;
+    border: 1px solid #ccc;
+    color: #444;
+    font-size: 0.833em; /* 10px */
+    margin-bottom: 1.2em;
+    padding: 0.5em 1.5em 0.5em 0.5em;
+    width: 80%;
+}
+
+.checkbox label { font-weight: normal; }
+
+.checkbox {
+    display: block;
+    margin-bottom: 0.833em;
+}
+
+input#submitcomment {
+    background: #f6f6f6 url({TEMPLATE_PATH}img/csend.png) 2% 50% no-repeat;
+    padding-left: 2em;
+}
+
+input#serendipity_preview {
+    background: #f6f6f6 url({TEMPLATE_PATH}img/cpreview.png) 2% 50% no-repeat;
+    padding-left: 2em;
+}
+/*** End comment form *************************************************/
+
+
+/*** Contact form *****************************************************/
+#contactsection .serendipity_comment_s9ymarkup,
+#contactsection .serendipity_comment_emoticate { display: none; }
+/*** End contact form *************************************************/
+
+
+/*** Archives *********************************************************/
+.archives { padding: 0 1.512em 0.756em 0.63em; }
+
+.archivesheader {
+    border-bottom: 1px solid #ccc;
+    clear: left;
+    font-size: 0.875em; /* 14px */
+    margin-bottom: 0.357em;
+}
+
+.archivesrow {
+    font-size: 0.750em; /* 12px */
+    margin-bottom: 1em;
+}
+
+.archdate { font-weight: bold; }
+
+dt.archivesdate,
+dd.archivescountlink,
+dd.archiveslink,
+dd.archivesnoentry { margin-bottom: 0.5em; }
+
+dd.archivescountlink,
+dd.archiveslink,
+dd.archivesnoentry,
+.entrysummary dt,
+.archdate, .archgo, .archmag { padding-left: 20px;}
+
+.archdate { background: url({TEMPLATE_PATH}img/date.png) no-repeat left center; }
+.archgo { background: url({TEMPLATE_PATH}img/datego.png) no-repeat left center; }
+.archmag { background: url({TEMPLATE_PATH}img/datemag.png) no-repeat left center; }
+
+.entrysummary dt { background: url({TEMPLATE_PATH}img/pagego.png) no-repeat left center; }
+
+.entrysummary {
+    font-size: 0.750em; /* 12px */
+    margin-bottom: 0.833em;
+}
+
+
+/*** End archives *****************************************************/
+
+
+/*** Search ***********************************************************/
+.searchbox { padding: 0 2.268em 0.756em 0.63em; }
+
+.searchbox dt {
+    font-size: 0.875em; /* 14px */
+    font-weight: bold;
+    margin-bottom: 0.167em;
+}
+
+.searchbox dd {
+    font-size: 0.750em; /* 12px */
+    margin-bottom: 0.250em;
+}
+
+.searchterm { font-style: italic; }
+
+.searchresults { font-weight: bold; }
+/*** End search *******************************************************/
+
+
+/*** Media manager ****************************************************/
+.serendipity_imageComment_center,
+.serendipity_imageComment_left,
+.serendipity_imageComment_right {
+    border: 1px solid #ddd;
+    background-color: #efefef;
+    text-align: center;
+}
+
+.serendipity_imageComment_center { margin: auto; }
+
+.serendipity_imageComment_left {
+    float: left;
+    margin: 0 0.63em 0.315em 0;
+}
+
+.serendipity_imageComment_right {
+    float: right;
+    margin: 0 0 0.315em 0.63em;
+}
+
+.serendipity_imageComment_img,
+.serendipity_imageComment_img img {
+    border: none;
+    display: block;
+    text-align: center;
+}
+
+.serendipity_imageComment_txt {
+    border-top: 1px solid #ddd;
+    clear: both;
+    font-size: 0.625em; /* 10px */
+    padding: 0.5em;
+    text-align: center;
+}
+/*** End media manager ************************************************/
+
+
+/*** Categories plugin ************************************************/
+.category_link_all { display: none; }
+
+#serendipity_categories_list li { margin-bottom: 0.5em; }
+/*** End categories plugin ********************************************/
+
+
+/*** Freetag plugin ***************************************************/
+.serendipity_freeTag {
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.serendipity_freeTag_related { margin-bottom: 0.5em; }
+
+.serendipity_freetag_taglist {
+    margin-bottom: 0.756em;
+    padding-left: 0.63em;
+}
+
+.serendipity_freetag_taglist_related {
+    font-size: 0.875em; /* 14px */
+    font-weight: bold;
+    margin-bottom: 0.357em;
+}
+
+.freetag_cloud h2 { padding-left: 0.714em; }
+/*** End freetag plugin ***********************************************/
+
+
+/*** Recent entries plugin ********************************************/
+.container_serendipity_plugin_recententries .serendipitySideBarContent .serendipitySideBarDate,
+.container_serendipity_plugin_recententries .serendipitySideBarContent br { display: none; }
+
+.container_serendipity_plugin_recententries .serendipitySideBarContent a {
+    display: block;
+    margin-bottom: 0.5em;
+}
+/*** End recent entries plugin ****************************************/
+
+
+/*** Recent comments plugin *******************************************/
+.plugin_comment_wrap br { line-height: 0.1em; }
+/*** End recent comments plugin ***************************************/
+
+
+/*** Static pages plugin **********************************************/
+.container_serendipity_plugin_staticpage .serendipitySideBarContent br { display: none; }
+
+.container_serendipity_plugin_staticpage .serendipitySideBarContent a {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.staticpagecontent p {
+    font-size: 0.750em; /* 12px */
+    margin-bottom: 0.833em;
+}
+
+.staticpagecontent dl { font-size: 0.750em; /* 12px */ }
+
+.staticpageauthor,
+.staticpagemetainfo,
+.staticpagenavigation { font-size: 0.625em; /* 10px */ }
+
+.staticpageauthor {
+    border-top: 1px solid #ccc;
+    padding-top: 0.3em;
+}
+
+.staticpagemetainfo { margin-bottom: 1.5em; }
+
+ul.staticpagenavigation,
+ul.staticpagenavigationcrumbs { list-style: none; }
+
+ul.staticpagenavigationcrumbs { display: none; }
+/*** End static pages plugin ******************************************/
+
+
+/*** Multilingual *****************************************************/
+.serendipity_multilingualInfo {
+    background: #efefef;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    margin: 1em 0;
+    padding: 0.3em;
+    text-align: right;
+}
+
+.serendipity_multilingualInfo a { padding-left: 18px; }
+
+a.multilingual_en { background: transparent url({TEMPLATE_PATH}img/gb.png) no-repeat left center; }
+a.multilingual_German { background: transparent url({TEMPLATE_PATH}img/de.png) no-repeat left center; }
+
+#language_chooser select {
+    border: 1px solid #ccc;
+    font-size: 1em!important;
+    margin-right: 0.5em;
+    width: 75%;
+}
+
+#language_chooser select:hover { border: 1px solid #2763a5; }
+
+#language_chooser input {
+    border: 1px solid #ccc;
+    background: #f6f6f6;
+}
+
+#language_chooser input:hover { border: 1px solid #2763a5; }
+/*** End multilingual *************************************************/
+
+
+/*** Random quotes ****************************************************/
+
+/* Note: for this to actually work, use this for the */
+/* format string for the random quotes plugin:       */
+
+/* <blockquote id="randomquote">                     */
+/*     <p>&raquo;%QUOTE%&laquo;</p>                  */
+/*     <p id="qsource"><cite>%AUTHOR%</cite></p>     */
+/* </blockquote>                                     */
+
+#randomquote p {
+    font-style: italic;
+    margin-bottom: 0.417em;
+}
+
+#randomquote #qsource { text-align: right!important; }
+
+#randomquote #qsource cite { font-style: normal!important; }
+
+#randomquote p a[href^="http"] {
+    background: transparent url({TEMPLATE_PATH}img/elink.png) right center no-repeat;
+    padding-right: 10px;
+}
+
+#randomquote p a[href^="http"]:visited {
+    background: transparent url({TEMPLATE_PATH}img/vlink.png) right center no-repeat;
+    padding-right: 10px;
+}
+/*** End random quotes ************************************************/
+
+/*** HTML nugget for links ********************************************/
+ul#linklistnugget {
+    list-style: none;
+    margin-bottom: 0.5em;
+}
+
+#linklistnugget li { padding: 0.250em 1em 0.250em 0; }
+
+#linklistnugget a[href^="http"] {
+    background: transparent url({TEMPLATE_PATH}img/elink.png) right center no-repeat;
+    padding-right: 10px;
+}
+
+#linklistnugget a[href^="http"]:visited {
+    background: transparent url({TEMPLATE_PATH}img/vlink.png) right center no-repeat;
+    padding-right: 10px;
+}
+/*** End HTML nugget for links ****************************************/

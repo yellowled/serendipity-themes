@@ -1,0 +1,66 @@
+/**********************************************************************/
+/* s9y Template '102' by Matthias 'YellowLed' Mees                    */
+/* (Print stylesheet)                                                 */
+/**********************************************************************/
+
+/* print black on white */
+html,
+body {
+    background:#fff;
+    color:#000;
+}
+
+/* try to avoid orphans and widows */
+.entrybody p { page-break-inside: avoid; }
+
+/* font sizes */
+body { font: 100.01%/150% Georgia, "Times New Roman", Times, serif; }
+
+#bloginfo dt,
+#bloginfo dd {
+    font-size: 160%;
+    font-weight: bold;
+}
+
+h1 { font-size: 140%; }
+h2 { font-size: 120% }
+pre, tt { font-size: 80%; }
+
+/* hide some things not needed in printouts */
+#skip, #top,
+#navigation,
+#pagination,
+#serendipityLeftSideBar,
+#footer,
+.permalink,
+.entryfooter,
+.addfooter,
+.serendipity_entrypaging,
+#trackbacksection,
+.nocomments,
+#commentview,
+#commentsection > a,
+.commentsourcetrace,
+.replytocomment,
+#cform { display: none; }
+
+/* adjust some margins, paddings, etc. */
+.entrybody p,
+.commentbody { text-align: justify; }
+
+#bloginfo dt,
+#bloginfo dd,
+.commentbody,
+.commentsource {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* remove unnecessary borders and underlines */
+abbr, acronym { border-bottom: none; }
+
+a { text-decoration: none; }
+
+/* display uri of hyperlinks in brackets behind the respective */
+/* link; this unfortunately only works in non-IE browsers      */
+/* a:not([href^= '#']):after { content: " ("attr(href)")"; } */
